@@ -1,38 +1,110 @@
+
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-image: url("./bckg.jpg");
+  background-color: #cccccc;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.notes{
+  background-color: white;
+  top: 20%;
+  left: 0px; 
+  right: 0px;
+  margin: 65px 38px 5px;
+  padding: 14px 62px 30px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.notes h1{
+  font-size: xxx-large;
+  background-image: linear-gradient(180deg, #ffffff, #e41749);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.note{
+  border-radius: 2px;
+  background-color: white;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  padding-bottom: 15px;
+}
+.note:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.note p{
+  float: left;
+  margin-left: 20px;
+  font-family: cursive;
+  color: #4bc2c5;
+  font-size: x-large;;
+}
+.note p span{
+  color: #e41749;
+  font-size: xx-large;
+}
+#buttons{
+  text-align: end;
+  margin-right: 10px;
+}
+#deleteButton{
+  background-color: #e41749;
+}
+#editeButton{
+  background-color: #4bc2c5;
+  border-style: none;
+  margin-right: 5px;
+}
+#addButton{
+  background-color: #e41749;
+  border-style: none;
+}
+#doneButton{
+  background-color: #ffc6c8;
+  border-style: none;
+  margin-right: 5px;
+}
+.date-title {
+ 
+  font-size: 20px;
+  margin: 7px 0 0 0;
+  letter-spacing: 1px;
+  font-weight: 600;
+  background-color: red;
+  
+  /* Create the gradient. */
+  background-image: linear-gradient(84deg, #f16e73, #8ac6d1);
+  
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+
+}
+.date-box {
+  background: linear-gradient(to left, #ffb6b9, rgb(255 255 255)), #ffffff;
+  padding: 17px 159px;
+  /* position: relative; */
+  margin-bottom: 11px;
+  margin-right: -15px;
+  margin-left: -15px;
+  margin-top: 10px;
+}
+.edite{
+  display : none;
+  padding: 24px 32px 0px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
